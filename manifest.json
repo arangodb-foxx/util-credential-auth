@@ -1,0 +1,37 @@
+{
+  "name": "credential-auth",
+  "author": "Alan Plum",
+  "version": "0.1",
+  "description": "Password-based authentication for Foxx based on Eric Elliott's credential module.",
+
+  "exports": {
+    "auth": "auth.js"
+  },
+
+  "defaultDocument": "",
+
+  "lib": ".",
+
+  "configuration": {
+    "hashMethod": {
+      "description": "Cryptographic hash function to use with PBKDF2-HMAC.",
+      "type": "string",
+      "default": "sha1"
+    },
+    "keyLength": {
+      "description": "Length of the derived key.",
+      "type": "integer",
+      "default": 66
+    },
+    "workUnits": {
+      "description": "Multiplication factor to determine the number of iterations. Higher values make the hashing slower and harder to brute-force.",
+      "type": "integer",
+      "default": 60
+    },
+    "workKey": {
+      "description": "Addition factor to determine the number of iterations. Should be a secret value between one and 999.",
+      "type": "integer",
+      "default": 388
+    }
+  }
+}
