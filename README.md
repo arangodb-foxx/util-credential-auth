@@ -32,7 +32,7 @@ Returns an authentication object with the following properties:
 * *hash*: the generated base64-encoded hash.
 * *salt*: the salt used to generate the hash.
 * *keyLength*: see [Configuration](#configuration).
-* *hashMethod*: the hash algorithm used to generate the hash, e.g. *"pbkdf2-hmac-sha256".
+* *hashMethod*: the hash algorithm used to generate the hash, e.g. *"pbkdf2-hmac-sha256"*.
 * *workUnits*: see [Configuration](#configuration).
 
 *Parameter*
