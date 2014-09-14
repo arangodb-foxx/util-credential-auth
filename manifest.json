@@ -1,8 +1,12 @@
 {
   "name": "credential-auth",
   "author": "Alan Plum",
-  "version": "0.1",
+  "version": "1.0",
   "description": "Password-based authentication for Foxx based on Eric Elliott's credential module.",
+
+  "engines": {
+    "arangodb": "^2.3"
+  },
 
   "exports": {
     "auth": "auth.js"
@@ -13,10 +17,10 @@
   "lib": ".",
 
   "configuration": {
-    "hashMethod": {
-      "description": "Cryptographic hash function to use with PBKDF2-HMAC.",
-      "type": "string",
-      "default": "sha1"
+    "json": {
+      "description": "Convert password data to JSON.",
+      "type": "boolean",
+      "default": false
     },
     "keyLength": {
       "description": "Length of the derived key.",
