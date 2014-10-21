@@ -31,9 +31,9 @@
 
   function hashPassword(password) {
     var salt = crypto.genRandomAlphaNumbers(cfg.keyLength || 66),
+      baseline = 1000,
       keyLength = cfg.keyLength || 66,
       workUnits = cfg.workUnits || 60,
-      baseline = cfg.baseline || 1000,
       workKey = cfg.workKey || 388,
       iterations = (baseline + workKey) * workUnits,
       data;
