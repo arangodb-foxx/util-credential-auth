@@ -2,7 +2,7 @@
   "name": "credential-auth",
   "description": "Password-based authentication for Foxx based on Eric Elliott's credential module.",
   "author": "ArangoDB GmbH",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "Apache License, Version 2.0",
 
   "repository": {
