@@ -23,7 +23,7 @@
     return crypto.constantEquals(
       authData.hash || '', new Buffer(crypto.pbkdf2(
       authData.salt || '',
-      password,
+      password || '',
       (baseline + workKey) * workUnits,
       authData.keyLength || cfg.keyLength || 66
     ), 'hex').toString('base64'));
