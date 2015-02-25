@@ -51,3 +51,7 @@ Generates a hash for the given password using the properties stored in the authe
 
 * *authData*: an authentication object.
 * *password*: a password to verify.
+
+## License
+
+This code is distributed under the [Apache License](http://www.apache.org/licenses/LICENSE-2.0).
