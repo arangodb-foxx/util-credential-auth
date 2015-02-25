@@ -2,29 +2,23 @@
   "name": "credential-auth",
   "description": "Password-based authentication for Foxx based on Eric Elliott's credential module.",
   "author": "ArangoDB GmbH",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "license": "Apache License, Version 2.0",
-
   "repository": {
     "type": "git",
     "url": "https://github.com/arangodb/foxx-credential-auth.git"
   },
-
   "contributors": [
     {
       "name": "Alan Plum",
       "email": "me@pluma.io"
     }
   ],
-
   "exports": {
     "auth": "auth.js"
   },
-
   "defaultDocument": "",
-
   "lib": ".",
-
   "configuration": {
     "json": {
       "description": "Convert password data to JSON.",
